@@ -1,4 +1,4 @@
-import type { CardTheme } from "../assets/data/types";
+import type { CardTheme } from "../data/types";
 import type { SVGProps } from "react";
 
 const gradients = {
@@ -66,7 +66,7 @@ export function ArrowIcon(
   props: SVGProps<SVGSVGElement> & { theme: CardTheme },
 ) {
   const { theme, ...rest } = props;
-   const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
+  const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ export function ArrowIcon(
 // ---- phone ----
 
 export function PhoneIcon({ theme }: { theme: CardTheme }) {
-   const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
+  const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
   return (
     <svg
       width="16"
@@ -132,7 +132,7 @@ export function PhoneIcon({ theme }: { theme: CardTheme }) {
 // --- @ ---
 
 export function AtIcon({ theme }: { theme: CardTheme }) {
-   const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
+  const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
   return (
     <svg
       width="16"
@@ -165,7 +165,7 @@ export function AtIcon({ theme }: { theme: CardTheme }) {
 // ---- location ----
 
 export function LocationIcon({ theme }: { theme: CardTheme }) {
-   const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
+  const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
   return (
     <svg
       width="16"
@@ -198,7 +198,7 @@ export function LocationIcon({ theme }: { theme: CardTheme }) {
 // ---- globe ----
 
 export function GlobeIcon({ theme }: { theme: CardTheme }) {
-  const [start, end] = gradients[theme]  ?? ["#2e3f75", "#165d31"];;
+  const [start, end] = gradients[theme] ?? ["#2e3f75", "#165d31"];
   return (
     <svg
       width="16"

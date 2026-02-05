@@ -1,7 +1,8 @@
-import type { cardData } from "../assets/data/types";
+import type { cardData } from "../data/types";
 import About from "./About";
 import ContactInfo from "./ContactInfo";
 import ImageLoad from "./ImageLoad";
+import VcardButton from "./VcardButton";
 
 export default function DigitalCard({ cardData }: { cardData: cardData }) {
   const gradient = {
@@ -41,7 +42,7 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
         </div>
 
         {/* --- Aftab Hussain --- */}
-        
+
         <div className="self-start">
           <h1
             className={`mt-78.5 text-gradient text-2xl ${gradient[cardData.theme]}`}
@@ -52,17 +53,7 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
             Executive Director – Strategic Development
           </p>
         </div>
-        <button
-          className={`flex justify-center items-center gap-x-2 py-2 mt-6 w-full ${gradient[cardData.theme]}`}
-        >
-          <img
-            src="/add-user-icon.svg"
-            alt="save contact icon"
-            width={24}
-            height={24}
-          />
-          <span className="font-bold text-white text-sm">Save Contact</span>
-        </button>
+        <VcardButton theme={cardData.theme}/>
       </div>
 
       {/* --- About --- */}

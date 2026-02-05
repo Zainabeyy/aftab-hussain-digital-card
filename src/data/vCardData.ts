@@ -1,0 +1,32 @@
+export const vCardData = {
+  gsee: {
+    firstName: "Aftab",
+    lastName: "Hussain",
+    personName: "Aftab Hussain",
+    companyName: "Gulf Source Energy & Environmental",
+    title: "Executive Director",
+    phones: ["+966 55 340 2439", "+966 13 358 8803"],
+    email: "ahussain@gulfsource.sa",
+    website: "https://gulfsource.sa/",
+  },
+  gssi: {
+    firstName: "Aftab",
+    lastName: "Hussain",
+    personName: "Aftab Hussain",
+    companyName: "Gulf Source Specialized Industries",
+    title: "Executive Director",
+    phones: ["+966 55 340 2439", "+966 13 358 8803"],
+    email: "ahussain@gulfsource.sa",
+    website: "https://gulfsource.sa/",
+  },
+  synergy: {
+    firstName: "Aftab",
+    lastName: "Hussain",
+    personName: "Aftab Hussain",
+    companyName: "Synergy Operations Consulting",
+    title: "Executive Director",
+    phones: ["+966 55 340 2439", "+966 13 358 8803"],
+    email: "ahussain@synergyoperations.com.sa",
+    website: "https://synergyoperations.com.sa/",
+  },
+};

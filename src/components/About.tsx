@@ -1,5 +1,5 @@
-import { bio, credentials, expertise } from "../assets/data/aboutData";
-import type { CardTheme } from "../assets/data/types";
+import { bio, credentials, expertise } from "../data/aboutData";
+import type { CardTheme } from "../data/types";
 import { ArrowIcon, BadgeIcon } from "./GradientSvg";
 
 export default function About({ theme }: { theme: CardTheme }) {

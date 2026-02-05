@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import cards from "../assets/data/cards";
-import type { cardData } from "../assets/data/types";
+import cards from "../data/cards";
+import type { cardData } from "../data/types";
 import DigitalCard from "../components/DigitalCard";
 
 export default function CardPage() {

@@ -1,4 +1,4 @@
-import { type contactType, type CardTheme } from "../assets/data/types";
+import { type contactType, type CardTheme } from "../data/types";
 import { AtIcon, GlobeIcon, LocationIcon, PhoneIcon } from "./GradientSvg";
 
 export default function ContactInfo({

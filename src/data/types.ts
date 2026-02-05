@@ -26,3 +26,14 @@ export type cardData = {
 export type cardsData = {
   [key: string]: cardData;
 }
+
+export type vCardDataType = {
+  personName: string;
+  firstName: string;
+  lastName: string;
+  title: string;
+  companyName: string;
+  email: string;
+  website: string;
+  phones: string[];
+}
