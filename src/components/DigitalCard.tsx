@@ -1,6 +1,7 @@
 import type { cardData } from "../assets/data/types";
 import About from "./About";
 import ContactInfo from "./ContactInfo";
+import ImageLoad from "./ImageLoad";
 
 export default function DigitalCard({ cardData }: { cardData: cardData }) {
   const gradient = {
@@ -25,18 +26,17 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
         alt="background"
         className={`absolute -top-19 left-0 w-full max-h-72.5 h-full`}
       />
-      <img
+      <ImageLoad
         src={`/${cardData.logo}-Logo.svg`}
         alt="company logo"
         className="mx-auto block pt-10 w-70 h-auto"
       />
       <div className="flex flex-col items-center mt-12 bg-blur h-full relative p-4">
         <div className="p-1 bg-white absolute -top-1.5 ">
-          <img
+          <ImageLoad
             src="/Aftab-Hussain.webp"
             alt="Aftab Hussain image"
-            width={288}
-            height={288}
+            className="w-72 h-72"
           />
         </div>
 
