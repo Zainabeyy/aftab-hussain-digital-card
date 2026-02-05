@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+/* Regular */
+@font-face {
+  font-family: "Aptos";
+  src: url("./assets/Aptos-Font/Aptos.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+  font-family: "Aptos";
+  src: url("./assets/Aptos-Font/SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: bold;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Aptos";
+  src: url("./assets/Aptos-Font/Aptos-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@theme {
+  --color-blue-base: #25325e;
+  --color-blue-dark: #2e3f75;
+  --color-blue-bright: #2ca8dc;
+  --color-blue-aqua: #17ead9;
+  --color-blue-purple: #6078ea;
+  --color-green-dark: #165d31;
+  --color-gray-light: hsl(0, 0%, 82%);
+
+   --font-Aptos: "Aptos", sans-serif;
+   --font-Montserrat: "Montserrat", sans-serif
+}
+
+body {
+  @apply font-Montserrat text-blue-base;
+}
+
+@utility gradient-blue-green {
+  @apply bg-linear-to-r from-blue-dark to-green-dark;
+}
+
+@utility gradient-blue {
+  @apply bg-linear-to-r from-blue-dark to-blue-bright;
+}
+
+@utility gradient-purple {
+  @apply bg-linear-to-r from-blue-purple to-blue-aqua;
+}
+
+@utility bg-blur {
+  @apply bg-gray-light/20 backdrop-blur-sm border border-white/20 w-full max-w-82;
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent font-bold;
+}
+
+@utility verticle-line{
+  @apply bg-white w-full h-px;
+}
