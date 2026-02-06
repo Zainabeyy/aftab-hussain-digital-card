@@ -1,19 +1,17 @@
 import { bio, credentials, expertise } from "../data/aboutData";
+import { gradientStyle } from "../data/cards";
 import type { CardTheme } from "../data/types";
 import { ArrowIcon, BadgeIcon } from "./GradientSvg";
 
 export default function About({ theme }: { theme: CardTheme }) {
-  const gradient = {
-    green: "gradient-blue-green",
-    blue: "gradient-blue",
-    purple: "gradient-purple",
-  };
   return (
     <div>
       {/* --- bio --- */}
 
       <section className="p-4 bg-blur">
-        <h2 className={`text-gradient text-sm ${gradient[theme]} mb-6`}>Bio</h2>
+        <h2 className={`text-gradient text-sm ${gradientStyle[theme]} mb-6`}>
+          Bio
+        </h2>
         <div className="text-xs font-medium leading-[150%] text-blue-base">
           {bio.map((item, index) => (
             <p key={index} className="mt-4">
@@ -27,7 +25,7 @@ export default function About({ theme }: { theme: CardTheme }) {
 
       <section className="bg-blur p-4 mt-2">
         <h2
-          className={`font-bold text-sm text-gradient ${gradient[theme]} mb-6`}
+          className={`font-bold text-sm text-gradient ${gradientStyle[theme]} mb-6`}
         >
           Core Expertise
         </h2>
@@ -46,7 +44,7 @@ export default function About({ theme }: { theme: CardTheme }) {
 
       <section className="bg-blur p-4 mt-2">
         <h2
-          className={`font-bold text-sm text-gradient ${gradient[theme]} mb-6`}
+          className={`font-bold text-sm text-gradient ${gradientStyle[theme]} mb-6`}
         >
           Professional Credentials
         </h2>

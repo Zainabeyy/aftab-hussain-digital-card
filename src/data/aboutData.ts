@@ -19,3 +19,4 @@ export const credentials = [
   "MS (Acquisition & Contract Management) | MBA | BS (Industrial Mechanical)",
   "PMP® Certified | QMS Lead Auditor ",
 ];
+

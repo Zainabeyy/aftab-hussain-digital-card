@@ -1,3 +1,4 @@
+import { gradientStyle } from "../data/cards";
 import { type contactType, type CardTheme } from "../data/types";
 import { AtIcon, GlobeIcon, LocationIcon, PhoneIcon } from "./GradientSvg";
 
@@ -8,14 +9,9 @@ export default function ContactInfo({
   contactData: contactType;
   theme: CardTheme;
 }) {
-  const gradient = {
-    green: "gradient-blue-green",
-    blue: "gradient-blue",
-    purple: "gradient-purple",
-  };
   return (
     <section className="bg-blur p-4 mt-2 flex flex-col gap-y-4 mb-4">
-      <h2 className={`font-bold text-sm text-gradient ${gradient[theme]}`}>
+      <h2 className={`font-bold text-sm text-gradient ${gradientStyle[theme]}`}>
         Contact Info
       </h2>
       <div className="flex justify-start items-center gap-x-2">

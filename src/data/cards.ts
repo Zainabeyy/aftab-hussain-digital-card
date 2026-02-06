@@ -3,6 +3,7 @@ import type { cardsData } from "./types";
 const cards: cardsData = {
   gsee: {
     logo: "GSEE",
+    companyName: "Gulf Source Energy & Environmental",
     theme: "green",
     socials: {
       linkedin: "",
@@ -23,6 +24,7 @@ const cards: cardsData = {
   gssi: {
     logo: "GSSI",
     theme: "blue",
+    companyName: "Gulf Source Specialized Industries",
     socials: {
       linkedin: "",
       facebook: "",
@@ -42,6 +44,7 @@ const cards: cardsData = {
   synergy: {
     logo: "synergy",
     theme: "purple",
+    companyName: "Synergy Operations Consulting",
     socials: {
       linkedin: "",
       facebook: "",
@@ -60,5 +63,10 @@ const cards: cardsData = {
   },
 };
 
+export const gradientStyle = {
+  green: "gradient-blue-green",
+  blue: "gradient-blue",
+  purple: "gradient-purple",
+};
 
 export default cards;

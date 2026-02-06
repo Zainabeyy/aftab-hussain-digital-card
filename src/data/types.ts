@@ -15,6 +15,7 @@ export type contactType = {
 export type cardData = {
   logo: CardLogoNames;
   theme: CardTheme;
+  companyName: string;
   socials: {
     linkedin: string;
     facebook: string;
@@ -25,15 +26,15 @@ export type cardData = {
 
 export type cardsData = {
   [key: string]: cardData;
-}
+};
 
 export type vCardDataType = {
-  personName: string;
   firstName: string;
   lastName: string;
-  title: string;
+  personName: string;
   companyName: string;
+  title: string;
+  phones: string[];
   email: string;
   website: string;
-  phones: string[];
-}
+};

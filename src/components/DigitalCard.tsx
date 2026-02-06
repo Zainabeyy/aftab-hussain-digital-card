@@ -1,3 +1,4 @@
+import { gradientStyle } from "../data/cards";
 import type { cardData } from "../data/types";
 import About from "./About";
 import ContactInfo from "./ContactInfo";
@@ -5,11 +6,6 @@ import ImageLoad from "./ImageLoad";
 import VcardButton from "./VcardButton";
 
 export default function DigitalCard({ cardData }: { cardData: cardData }) {
-  const gradient = {
-    green: "gradient-blue-green",
-    blue: "gradient-blue",
-    purple: "gradient-purple",
-  };
   const bgImg = {
     GSEE: "pixel-map.svg",
     GSSI: "pixel-map.svg",
@@ -20,7 +16,7 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
       className={`relative max-w-screen min-h-screen flex flex-col items-center ${cardData.logo === "synergy" ? "font-Aptos" : "font-Montserrat"}`}
     >
       <div
-        className={`${gradient[cardData.theme]} h-108 w-full absolute top-0 left-0 -z-1`}
+        className={`${gradientStyle[cardData.theme]} h-108 w-full absolute top-0 left-0 -z-1`}
       />
       <img
         src={`/${bgImg[cardData.logo]}`}
@@ -45,7 +41,7 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
 
         <div className="self-start">
           <h1
-            className={`mt-78.5 text-gradient text-2xl ${gradient[cardData.theme]}`}
+            className={`mt-78.5 text-gradient text-2xl ${gradientStyle[cardData.theme]}`}
           >
             Aftab Hussain
           </h1>
@@ -53,7 +49,7 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
             Executive Director – Strategic Development
           </p>
         </div>
-        <VcardButton theme={cardData.theme}/>
+        <VcardButton theme={cardData.theme} companyName={cardData.companyName}/>
       </div>
 
       {/* --- About --- */}
@@ -64,7 +60,7 @@ export default function DigitalCard({ cardData }: { cardData: cardData }) {
 
       <section className="bg-blur p-4 mt-2">
         <h2
-          className={`font-bold text-sm text-gradient ${gradient[cardData.theme]} mb-6`}
+          className={`font-bold text-sm text-gradient ${gradientStyle[cardData.theme]} mb-6`}
         >
           Socials
         </h2>

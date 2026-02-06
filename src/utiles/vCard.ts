@@ -17,3 +17,15 @@ URL:${data.website ?? ""}
 END:VCARD
 `.trim();
 }
+
+export function openVCard(vcard: string, filename: string) {
+  const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+
+  URL.revokeObjectURL(url);
+}
