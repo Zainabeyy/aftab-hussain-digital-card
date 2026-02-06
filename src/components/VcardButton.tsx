@@ -21,7 +21,7 @@ export default function VcardButton({
     }
     if (companyData) {
       const vcard = generateVCard(companyData);
-      openVCard(vcard, `${companyData.personName}.vcf`);
+      openVCard(vcard, `${companyData.companyName}.vcf`);
     }
   }
   return (

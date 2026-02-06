@@ -41,7 +41,7 @@ const cards: cardsData = {
       },
     },
   },
-  synergy: {
+  synergyOperations: {
     logo: "synergy",
     theme: "purple",
     companyName: "Synergy Operations Consulting",

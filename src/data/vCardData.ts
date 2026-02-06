@@ -19,7 +19,7 @@ export const vCardData = {
     email: "ahussain@gulfsource.sa",
     website: "https://gulfsource.sa/",
   },
-  synergy: {
+  synergyOperations: {
     firstName: "Aftab",
     lastName: "Hussain",
     personName: "Aftab Hussain",
