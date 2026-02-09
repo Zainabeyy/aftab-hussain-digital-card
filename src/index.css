@@ -39,7 +39,15 @@
 }
 
 body {
-  @apply font-Montserrat text-blue-base;
+  @apply font-Montserrat text-blue-base font-medium text-xs sm:text-sm leading-[150%];
+}
+
+section {
+  @apply p-4 sm:p-6 mt-2 sm:mt-2.5;
+}
+
+@utility text-14{
+  @apply text-sm sm:text-lg font-bold;
 }
 
 @utility gradient-blue-green {
@@ -55,7 +63,7 @@ body {
 }
 
 @utility bg-blur {
-  @apply bg-gray-light/20 backdrop-blur-sm border border-white/20 w-full max-w-82;
+  @apply bg-gray-light/20 backdrop-blur-sm border border-white/20 w-full max-w-xl;
 }
 
 @utility text-gradient {

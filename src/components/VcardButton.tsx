@@ -10,7 +10,6 @@ export default function VcardButton({
   theme: CardTheme;
   companyName: string;
 }) {
-
   function handleSaveContact() {
     const companyData: vCardDataType | undefined = Object.values(
       vCardData,
@@ -26,6 +25,7 @@ export default function VcardButton({
   }
   return (
     <button
+      type="button"
       onClick={handleSaveContact}
       className={`flex justify-center items-center gap-x-2 py-2 mt-6 w-full ${gradientStyle[theme]}`}
     >
@@ -35,7 +35,7 @@ export default function VcardButton({
         width={24}
         height={24}
       />
-      <span className="font-bold text-white text-sm">Save Contact</span>
+      <span className="text-14 text-white ">Save Contact</span>
     </button>
   );
 }

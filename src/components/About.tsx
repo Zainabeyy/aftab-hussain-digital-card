@@ -9,10 +9,10 @@ export default function About({ theme }: { theme: CardTheme }) {
       {/* --- bio --- */}
 
       <section className="p-4 bg-blur">
-        <h2 className={`text-gradient text-sm ${gradientStyle[theme]} mb-6`}>
+        <h2 className={`text-gradient text-14 ${gradientStyle[theme]} mb-6`}>
           Bio
         </h2>
-        <div className="text-xs font-medium leading-[150%] text-blue-base">
+        <div className="text-blue-base">
           {bio.map((item, index) => (
             <p key={index} className="mt-4">
               {item}
@@ -23,9 +23,9 @@ export default function About({ theme }: { theme: CardTheme }) {
 
       {/* --- expertise --- */}
 
-      <section className="bg-blur p-4 mt-2">
+      <section className="bg-blur p-4 mt-2 sm:mt-3">
         <h2
-          className={`font-bold text-sm text-gradient ${gradientStyle[theme]} mb-6`}
+          className={`text-14 text-gradient ${gradientStyle[theme]} mb-6`}
         >
           Core Expertise
         </h2>
@@ -34,17 +34,17 @@ export default function About({ theme }: { theme: CardTheme }) {
             key={index}
             className="flex justify-start items-start gap-x-2 gap-y-4"
           >
-            <ArrowIcon theme={theme} className="w-3 h-auto m-1" />
-            <p className="font-medium text-xs leading-[150%]">{item}</p>
+            <ArrowIcon theme={theme} className="w-3.5 sm:w-4 h-auto m-1" />
+            <p>{item}</p>
           </div>
         ))}
       </section>
 
       {/* --- credentials --- */}
 
-      <section className="bg-blur p-4 mt-2">
+      <section className="bg-blur p-4 mt-2 sm:mt-3">
         <h2
-          className={`font-bold text-sm text-gradient ${gradientStyle[theme]} mb-6`}
+          className={`text-14 text-gradient ${gradientStyle[theme]} mb-6`}
         >
           Professional Credentials
         </h2>
@@ -53,10 +53,8 @@ export default function About({ theme }: { theme: CardTheme }) {
             key={index}
             className="flex justify-start items-start gap-x-2 gap-y-4"
           >
-            <div className={`shrink-0 w-4 h-4 p-1`}>
-              <BadgeIcon theme={theme} />
-            </div>
-            <p className="font-medium text-xs leading-[150%]">{item}</p>
+              <BadgeIcon theme={theme} className="w-3 sm:w-3.5 h-auto mt-1"/>
+            <p>{item}</p>
           </div>
         ))}
       </section>

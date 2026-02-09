@@ -16,7 +16,7 @@ export const vCardData = {
     companyName: "Gulf Source Specialized Industries",
     title: "Executive Director",
     phones: ["+966 55 340 2439", "+966 13 358 8803"],
-    email: "ahussain@gulfsource.sa",
+    email: "ahussain@gulfsource.com.sa",
     website: "https://gulfsource.sa/",
   },
   synergyOperations: {
