@@ -3,7 +3,7 @@ import type { cardsData } from "./types";
 const cards: cardsData = {
   gsee: {
     logo: "GSEE",
-    companyName: "Gulf Source Energy & Environmental",
+    companyName: "GSEE",
     theme: "green",
     socials: {
       linkedin: "",
@@ -24,7 +24,7 @@ const cards: cardsData = {
   gssi: {
     logo: "GSSI",
     theme: "blue",
-    companyName: "Gulf Source Specialized Industries",
+    companyName: "GSSI",
     socials: {
       linkedin: "",
       facebook: "",

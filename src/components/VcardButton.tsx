@@ -27,7 +27,7 @@ export default function VcardButton({
     <button
       type="button"
       onClick={handleSaveContact}
-      className={`flex justify-center items-center gap-x-2 py-2 mt-6 w-full ${gradientStyle[theme]}`}
+      className={`flex justify-center items-center gap-x-2 py-2 mt-6 w-full hover:cursor-pointer ${gradientStyle[theme]}`}
     >
       <img
         src="/add-user-icon.svg"
